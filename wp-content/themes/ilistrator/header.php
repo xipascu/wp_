@@ -9,6 +9,15 @@
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script> -->
 </head>
-<body>
+
+<?php
+  if(is_front_page()):
+    $ilistrator_classes = array('ilistrator-class', 'my-class');
+  else:
+    $ilistrator_classes = array('no-ilistrator-class');
+  endif;
+?>
+
+<body <?php body_class($ilistrator_classes); ?>>
   <?php wp_nav_menu(array('theme_location'=>'primary')); ?>
     
