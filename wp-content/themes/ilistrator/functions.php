@@ -6,3 +6,12 @@ function ilistrator_script_enqueue() {
 }
 
 add_action('wp_enqueue_scripts', 'ilistrator_script_enqueue');
+
+function ilistrator_theme_setup() {
+  add_theme_support('menus');
+
+  register_nav_menu('primary', 'Primary Header Navigation');
+}
+
+add_action('init', 'ilistrator_theme_setup');
+// or after_setup_theme
