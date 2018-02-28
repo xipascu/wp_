@@ -11,6 +11,7 @@ function ilistrator_theme_setup() {
   add_theme_support('menus');
 
   register_nav_menu('primary', 'Primary Header Navigation');
+  register_nav_menu('secondary', 'Footer Navigatoin');
 }
 
 add_action('init', 'ilistrator_theme_setup');

@@ -10,5 +10,5 @@
   <script src="main.js"></script> -->
 </head>
 <body>
-  <?php wp_nav_menu(); ?>
+  <?php wp_nav_menu(array('theme_location'=>'primary')); ?>
     
